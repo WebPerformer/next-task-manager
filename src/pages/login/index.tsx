@@ -13,21 +13,21 @@ export default function Login() {
   };
 
   return (
-    <div className="bg-[#18181B] flex justify-center items-center h-screen w-full">
+    <div className="bg-dark flex justify-center items-center h-screen w-full">
       <div className="flex flex-col gap-10 w-full max-w-xl px-5 sm:px-10">
         <div className="flex flex-col gap-3">
-          <h1 className="text-4xl text-white font-bold">Hello Again! 👋</h1>
-          <p className="text-xl text-gray-200">
+          <h1 className="text-4xl text-light font-bold">Hello Again! 👋</h1>
+          <p className="text-xl text-gray">
             Welcome back to your digital world.
           </p>
         </div>
         <form className="flex flex-col gap-5 w-full" onSubmit={handleSubmit}>
           <div className="flex flex-col gap-2 w-full">
-            <label className="text-lg text-white" htmlFor="email">
+            <label className="text-lg text-light" htmlFor="email">
               Username or email address
             </label>
             <input
-              className="py-2 px-4 text-white w-full rounded-lg bg-transparent border border-[#393941] focus:outline-none"
+              className="py-2 px-4 text-light w-full rounded-lg bg-dark border border-[#393941] focus:outline-none"
               type="email"
               name="email"
               id="email"
@@ -37,11 +37,11 @@ export default function Login() {
             />
           </div>
           <div className="flex flex-col gap-2 w-full">
-            <label className="text-lg text-white" htmlFor="password">
+            <label className="text-lg text-light" htmlFor="password">
               Password
             </label>
             <input
-              className="py-2 px-4 text-white w-full rounded-lg bg-transparent border border-[#393941] focus:outline-none"
+              className="py-2 px-4 text-light w-full rounded-lg bg-dark border border-[#393941] focus:outline-none"
               type="password"
               name="password"
               id="password"
@@ -51,7 +51,7 @@ export default function Login() {
             />
           </div>
           <Link
-            className="text-base text-gray-200 border-b w-fit"
+            className="text-base text-gray border-b w-fit"
             href={"#"}
             passHref
           >
@@ -65,7 +65,7 @@ export default function Login() {
               Sign in
             </button>
           </div>
-          <p className="text-base text-gray-200">
+          <p className="text-base text-gray">
             Don't have any account?{" "}
             <Link
               className="text-[#2AE98C] border-b border-[#2AE98C]"
